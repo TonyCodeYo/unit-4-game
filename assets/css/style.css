@@ -1,0 +1,17 @@
+body {
+	background-image: url("../images/background_crystal_collector.jpg");
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+.col-8 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container {
+	background-image: url("../images/background_crystal_collector.jpg");
+}
