@@ -13,7 +13,6 @@ $(document).ready(function () {
     reset();
 
     function reset() {
-      
       totalScore = 0;
       crystalScore = Math.floor(Math.random() * 101) + 19;
       $("#crystalScore").text(crystalScore)
@@ -26,14 +25,8 @@ $(document).ready(function () {
       $("#lossesSpan").text(lossesOk);
     }
 
-    console.log(crystalScore, totalScore);
-    console.log(crystal1, crystal2, crystal3, crystal4);
-    console.log(winsOk, lossesOk);
-  
   $("#crystal1").on("click", function (huh1) {
-    console.log(huh1);
     totalScore = crystal1 + totalScore;
-    console.log(totalScore);
     $("#totalScore").text(totalScore);
     if (totalScore === crystalScore) {
       winsOk = winsOk + 1;
@@ -47,9 +40,7 @@ $(document).ready(function () {
     }
   })
   $("#crystal2").on("click", function (huh2) {
-    console.log(huh2);
     totalScore = crystal2 + totalScore;
-    console.log(totalScore);
     $("#totalScore").text(totalScore);
     if (totalScore === crystalScore) {
       winsOk = winsOk + 1;
@@ -63,9 +54,7 @@ $(document).ready(function () {
     }
   })
   $("#crystal3").on("click", function (huh3) {
-    console.log(huh3);
     totalScore = crystal3 + totalScore;
-    console.log(totalScore);
     $("#totalScore").text(totalScore);
     if (totalScore === crystalScore) {
       winsOk = winsOk + 1;
@@ -79,8 +68,7 @@ $(document).ready(function () {
     }
   })
   $("#crystal4").on("click", function (huh4) {
-    console.log(huh4);totalScore = crystal4 + totalScore;
-    console.log(totalScore);
+    totalScore = crystal4 + totalScore;
     $("#totalScore").text(totalScore);
     if (totalScore === crystalScore) {
       winsOk = winsOk + 1;
